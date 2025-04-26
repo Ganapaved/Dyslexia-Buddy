@@ -102,6 +102,7 @@ pip install flask-cors
 Run the server:
 ```bash
 python main.py
+python app.py
 ```
 #### 3.Frontend Setup(Next.js app)
 Navigate to the dyslexia directory:
