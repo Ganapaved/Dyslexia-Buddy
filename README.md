@@ -2,7 +2,7 @@
 
 ## **Overview**
 
-**Dyslexi-AI** is a gamified platform designed to assist in the early detection and therapy for dyslexia. The platform leverages educational games to track a user's progress, adjust difficulty levels dynamically using Q-learning, and provide personalized feedback. It includes various interactive games aimed at improving the skills of dyslexic students, such as the **Phonics Game**, **Rhyme Race**, **Sequence Sorter**, and others, while focusing on learning and cognitive development.
+**Dyslexi-AI** is a gamified platform designed to assist in the early detection and therapy for dyslexia. The platform leverages educational games to track a user's progress, adjust difficulty levels dynamically using Q-learning, and provide personalized feedback. It includes various interactive games aimed at improving the skills of dyslexic students, such as the **Phonics Game**, **Rhyme Race**,  and others, while focusing on learning and cognitive development.
 
 The platform also includes a comprehensive system for tracking user performance, awarding badges, providing a leaderboard, and offering personal dashboards with graphs that show overall improvement across games.
 
@@ -21,7 +21,6 @@ The platform also includes a comprehensive system for tracking user performance,
 - **Backend**: Node.js, Express.js, MongoDB
 - **Database**: MongoDB (for storing user stats, points, accuracy, and badges)
 - **Game Logic**: Q-learning algorithm for dynamic difficulty adjustment
-- **Realtime Data**: Supabase for storing and fetching session data
 - **Authentication**: JWT (JSON Web Tokens) for user authentication
 
 ## **Project Structure**
