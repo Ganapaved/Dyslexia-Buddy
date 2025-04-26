@@ -23,6 +23,19 @@ The platform also includes a comprehensive system for tracking user performance,
 - **Game Logic**: Q-learning algorithm for dynamic difficulty adjustment
 - **Authentication**: JWT (JSON Web Tokens) for user authentication
 
+## **SDG Applicable**
+### 🎯 SDG 3: Good Health and Well-being
+Target 3.4: Promote mental health and well-being.
+
+Your project contributes to early detection of learning disabilities like dyslexia and provides accessible therapeutic tools, reducing the learning gap and supporting mental well-being in children.
+### 🎯 SDG 4: Quality Education
+Target 4.1: Ensure inclusive and equitable quality education.
+
+Target 4.5: Eliminate gender disparities and ensure equal access to education for vulnerable groups, including persons with disabilities.
+
+Dyslexi-AI empowers children with learning difficulties to improve their reading and cognitive skills through fun and adaptive learning tools, supporting inclusive education.
+---
+
 ## **Project Structure**
 
 ```bash
