@@ -27,27 +27,39 @@ The platform also includes a comprehensive system for tracking user performance,
 ## **Project Structure**
 
 ```bash
-Dyslexi-AI/
-│
-├── backend/                         # Node.js and Express backend
-│   ├── controllers/                 # Controllers for API routes
-│   ├── models/                      # Mongoose models for MongoDB
-│   ├── routes/                      # API route definitions
-│   ├── services/                    # Business logic services (e.g., Q-learning)
-│   ├── app.js                       # Express app configuration
-│   ├── config.js                    # Environment and database configuration
-│
-├── frontend/                        # React frontend
-│   ├── components/                  # React components (e.g., game UI, user dashboard)
-│   ├── pages/                       # Page-level components (e.g., home, profile)
-│   ├── App.js                       # Main React component
-│   ├── tailwind.config.js            # Tailwind CSS configuration
-│   ├── public/                      # Static files
-│
-├── database/                        # MongoDB database schema and seeding scripts
-│
-├── README.md                        # Project documentation
-└── .gitignore                       # Git ignore file
+project-root/
+├── chatbotserver/
+│   ├── app.py
+│   ├── chatbot.py
+│   ├── main.py
+├── dyslexia/
+│   ├── app/
+│   ├── components/
+│   ├── context/
+│   ├── lib/
+│   ├── models/
+│   ├── public/
+│   ├── utils/
+│   ├── node_modules/
+│   ├── .next/
+│   ├── .gitignore
+│   ├── components.json
+│   ├── eslint.config.mjs
+│   ├── jsconfig.json
+│   ├── next.config.mjs
+│   ├── package.json
+│   ├── package-lock.json
+│   ├── postcss.config.mjs
+│   ├── README.md
+│   ├── scene.splinecode
+├── serverpy/
+│   ├── model/
+│   ├── temp_uploads/
+│   ├── dyslexia_model.pkl
+│   ├── main.py
+│   ├── requirements.txt
+│   ├── temp_recording.webm
+│   ├── Untitled.ipynb
 ```
 ## **How to Run Project Locally**
 ### 1. Clone the Repository
@@ -56,18 +68,55 @@ git clone https://github.com/Ganapaved/Dyslexia-Buddy.git
 cd Dyslexi-AI
 ```
 ### 2. Install Dependencies
-#### Backend
-Navigate to the backend ```directory``` and install the required dependencies.
+#### Prerequisites
+Make sure you have the following installed:
+- Python (version 3.8+ recommended)
+- Node.js and npm
 ```bash
-cd backend
+python --version
+node --version
+npm --version
+```
+#### 1. Backend Setup
+Navigate to the ```serverpy``` directory:
+```bash
+cd serverpy
+```
+Install the Python dependencies:
+```bash
+pip install -r requirements.txt
+```
+Run the server:
+```bash
+python main.py
+```
+#### 2.  Setting up chatbotserver
+Navigate to the ```chatbotserver``` directory:
+```bash
+cd ../chatbotserver
+```
+If you encounter CORS errors, install Flask-CORS:
+```bash
+pip install flask-cors
+```
+Run the server:
+```bash
+python main.py
+```
+#### 3.Frontend Setup(Next.js app)
+Navigate to the dyslexia directory:
+```bash
+cd ../dyslexia
+```
+Install the Node.js dependencies:
+```bash
 npm install
 ```
-#### Frontend
-Navigate to the ```frontend``` directory and install the required dependencies.
+Run the development server:
 ```bash
-cd frontend
-npm install
+npm run dev
 ```
+The frontend will be available at [http://localhost:3000](http://localhost:3000/).
 
 
 
